@@ -40,9 +40,89 @@ body{
   -o-border-radius: 100%;
   border-radius: 100%;
   background: url(../img/wow.png) center / cover;
+  -webkit-animation: bigEye 1s ease-in-out infinite;
+  animation: bigEye 1s ease-in-out infinite;
 }
 
 .smyle img{
   width: 15em;
-  padding-top: 2em;
+  padding-top: 3em;
+  -webkit-animation: smileMe 3s ease-in-out infinite;
+  animation: smileMe 3s ease-in-out infinite;
+}
+
+@keyframes smileMe{
+  0%{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  20%{
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+  }
+  40%{
+    -webkit-transform: rotate(+20deg);
+    -moz-transform: rotate(+20deg);
+    -ms-transform: rotate(+20deg);
+    -o-transform: rotate(+20deg);
+    transform: rotate(+20deg);
+}
+  50%{
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transfor: scale(0.5); 
+  }
+  60%{
+    -webkit-transform: rotate(+20deg);
+    -moz-transform: rotate(+20deg);
+    -ms-transform: rotate(+20deg);
+    -o-transform: rotate(+20deg);
+    transform: rotate(+20deg);
+  }
+  80%{
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+  }
+  100%{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bigEye {
+  0% {
+    -webkit-transform: scale(none);
+    -moz-transform: scale(none);
+    -ms-transform: scale(none);
+    -o-transform: scale(none);
+    transform: scale(none);
+  }
+  50%{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100%{
+    -webkit-transform: scale(none);
+    -moz-transform: scale(none);
+    -ms-transform: scale(none);
+    -o-transform: scale(none);
+    transform: scale(none);
+  }
 }
