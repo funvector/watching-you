@@ -1,2 +1,2 @@
 # watching-you
-[https://github.com/funvector/watching-you/](https://github.com/funvector/watching-you/)
+[https://funvector.github.io/watching-you/](https://funvector.github.io/watching-you/)
