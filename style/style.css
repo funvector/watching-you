@@ -7,7 +7,8 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: aqua;
+  -webkit-animation: bgAnim 10s ease-in-out infinite;
+  animation: bgAnim 10s ease-in-out infinite;
 }
 
 .wrapper{
@@ -49,6 +50,21 @@ body{
   padding-top: 3em;
   -webkit-animation: smileMe 3s ease-in-out infinite;
   animation: smileMe 3s ease-in-out infinite;
+}
+
+@keyframes bgAnim{
+  0%{
+    background-image: linear-gradient(90deg, #a8edea, #fed6e3);
+  }
+  40%{
+    background-image: linear-gradient(90deg, #fed6e3, #fa709a);
+  }
+  60%{
+    background-image: linear-gradient(90deg, #fee140, #fa709a);
+  }
+  100%{
+    background-image: linear-gradient(90deg, #fee140, #fed6e3);
+  }
 }
 
 @keyframes smileMe{
